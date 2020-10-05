@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #333333;
+    color: white;
+    font-family: 'Chilanka', cursive;
+}
+
+/* home */
+
+main#ducks {
+    background-image: url(img/landscape.jpeg);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header {
+    background: chocolate;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+ul {
+    margin: 0 auto;
+    color: wheat;
+    background: bisque;
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    float: left;
+    width: 200px;
+    padding-left: 50px;
+    margin-right: 30px;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* contact */
+
+h2 {
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(250, 139, 3);
+    margin-left: 50px;
+}
+
+main table {
+    margin-top: 20px;
+    margin-left: 50px;
+    border-collapse: collapse;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td {
+    border: 1px solid #333333;
+}
+
+.headline {
+    background-color: rgb(250, 139, 3);
+    color: #333333;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+}
+
+.lorem {
+    background-color: bisque;
+    color: #333333;
+    padding: 15px;
+    text-align: center;
+}
+
+.lorem2 {
+    background-color: rgb(250, 206, 152);
+    color: #333333;
+    padding: 15px;
+    text-align: center;
+}
+
+/* boxes */
+
+#boxes {
+    background: bisque url("img/landscape.jpeg") no-repeat center center/cover;
+}
+
+.boxes-headline {
+    color: black;
+}
+
+.box {
+    background-color: beige;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+.box1 {
+    background-color: brown;
+    border: 5px dotted yellow;
+}
+
+.box2 {
+    background-color: brown;
+    border: 5px dashed yellow;
+}
+
+.box3 {
+    background-color: green;
+    border: 10px double purple;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 5px dashed red;
+}

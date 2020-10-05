@@ -1,0 +1,21 @@
+body {
+    background: lightblue;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    font-family: verdana, sans-serif;
+    font-size: 20px;
+}
+
+#first {
+    font-size: 15px;
+}
+
+.second {
+    color: yellowgreen;
+    font-size: 15px;
+}

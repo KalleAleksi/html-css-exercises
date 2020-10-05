@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: 4fr repeat(3, 1fr);
+    grid-auto-rows: minmax(4rem, auto);
+}
+
+.wrapper div {
+    border: 1px solid black;
+}
+
+.wrapper div.logo {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 1; 
+    background-color: burlywood;
+}
+
+.wrapper div.link1 {
+    background-color: yellow;
+}
+
+.wrapper div.link2 {
+    background-color: orange;
+}
+
+.wrapper div.link3 {
+    background-color: orangered;
+}
+
+/* container */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 4rem;
+}
+
+.container div.post-title {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    background-color: rgb(255, 227, 190);
+    border: 1px solid black;
+}
+
+.container div.post-meta {
+    grid-column: 1 / 2;
+    grid-row: 2 / span 5;
+    background-color: rgb(195, 255, 255);
+    border: 1px solid black;
+}
+
+.container div.main {
+    grid-column: 2 / 4;
+    grid-row: 2 / span 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 4rem;
+}
+
+.container div .main-content {
+    grid-column: 1 / 5;
+    grid-row: 1 / span 2;
+    background-color: rgb(168, 0, 0);
+    border: 1px solid black;
+}
+
+.container div .main-content-image {
+    grid-column: 1 / 5;
+    grid-row: 3 / span 3;
+    background-color: rgb(229, 253, 174);
+    border: 1px solid black;
+}
+
+.container div.side {
+    display: grid;
+    grid-column: 4 / 4;
+    grid-row: 1 / span 6;
+}
+
+.container div .sidebar {
+    grid-row: 1 / span 1;
+    border: 1px solid black;
+    background-color: rgb(253, 174, 174);
+}
+
+.container div .ads {
+    grid-row: 2 / span 1;
+    border: 1px solid black;
+    background-color: rgb(252, 253, 174);
+}
+
+.container div .Other-stuff {
+    grid-row: 3 / span 1;
+    border: 1px solid black;
+    background-color: rgb(174, 241, 253);
+}
+
+footer {
+    display: grid;
+    background-color: rgb(223, 247, 250);
+    grid-auto-rows: 4rem;
+    border: 1px solid black;
+}
+

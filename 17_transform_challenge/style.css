@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* first task */
+
+.first-task {
+    margin-left: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+
+.first-task:hover {
+    width: 6rem;
+    height: 6rem;
+    background-color: aquamarine;
+    transition: all .5s;
+}
+
+/* second task -- rotate rectangle */
+
+.second-task {
+    margin-left: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: antiquewhite;
+}
+
+.second-task:hover {
+    transform: rotate(180deg);
+    background-color: aquamarine;
+    transition: all .5s;
+}
+
+/* third task -- display text on hover */
+
+.third-task {
+    margin-left: 5rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: antiquewhite;
+}
+
+.third-task p {
+    display: none;
+}
+
+.third-task:hover {
+    width: 4rem;
+    height: 4rem;
+}
+
+.third-task:hover p {
+    display: block;
+}
+
+/* fifth task -- borders appear on hover */
+
+.fifth-task {
+    margin-left: 5rem;
+    width: 10rem;
+    height: 5rem;
+    background-color: sandybrown;
+}
+
+.fifth-task:hover {
+    border: 5px solid purple;
+    transition: .5s;
+}
+
+/* sixth task -- animation */
+
+@keyframes animaatio {
+    0% {border-radius: 50%;}
+    50% {border-radius: 0%; background-color: black; margin-left: 500px; margin-top: 200px;}
+    100% {border-radius: 50%;}
+}
+
+.animated-circle {
+    margin-left: 5rem;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animaatio;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.animated-circle:hover {
+    animation-play-state: paused;
+}
+
+/* seventh task -- alive background */
+
+body {
+    background: background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(109, 0, 255)) !important;
+  }
+  
+  /* css animation not smooth */
+  body {
+    min-height: 100vh;
+    opacity: .5;
+    animation: myfirst 5s;
+    -moz-animation: myfirst 5s infinite; /* Firefox */
+    -webkit-animation: myfirst 5s infinite; /* Safari and Chrome */
+  }
+  
+  @-moz-keyframes myfirst { /* Firefox */ 
+    0% {
+      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(0, 174, 255))
+    }
+    50% {
+      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(135, 255, 0))
+    }
+    100% {
+      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(109, 0, 255))
+    }
+  }
+  
+  @-webkit-keyframes myfirst { /* Safari and Chrome */
+    0% {
+      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(0, 174, 255))
+    }
+    50% {
+      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(135, 255, 0))
+    }
+    100% {
+      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(109, 0, 255))
+    }
+  }

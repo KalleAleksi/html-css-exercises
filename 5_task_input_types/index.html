@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_task</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>HTML Input Types</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="headline">Description</td>
+                <td class="headline">Input example</td>
+                <td class="headline">Notes</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="button"</td>
+                <td class="lorem"><input type="button" value="click me!"></td>
+                <td class="lorem">Needs value for button text</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="checkbox"</td>
+                <td class="lorem2"><label for="vehicle1"> I am checkbox</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"></td>
+                <td class="lorem2">checkbox text only after input part</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="color"</td>
+                <td class="lorem"><input type="color" value="#ff0000"></td>
+                <td class="lorem">with value you can set default color. not supported in IE or safari 9.1 or earlier</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="date"</td>
+                <td class="lorem2"><input type="date"></td>
+                <td class="lorem2">IE and safari old versions not supported</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="email"</td>
+                <td class="lorem"><input type="email" placeholder="email here"></td>
+                <td class="lorem">IE9 and earlier not supported</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="file"</td>
+                <td class="lorem2"><input type="file"></td>
+                <td class="lorem2"></td>
+            </tr>
+            <tr>
+                <td class="lorem">type="month"</td>
+                <td class="lorem"><input type="month"></td>
+                <td class="lorem">Firefox, safari and IE11 and earlier not supported</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="number"</td>
+                <td class="lorem2"><input type="number" placeholder="e.g. 04042445252"></td>
+                <td class="lorem2">min and max attributes to add numeric restrictions in input field. not supported IE9 and earlier. </td>
+            </tr>
+            <tr>
+                <td class="lorem">type="password"</td>
+                <td class="lorem"><input type="password"></td>
+                <td class="lorem">characters in the field are masked.</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="radio"</td>
+                <td class="lorem2"><input type="radio">Radiobutton</td>
+                <td class="lorem2">text after input tag.</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="range"</td>
+                <td class="lorem"><input type="range"></td>
+                <td class="lorem">min and max can be used. IE9 and earlier not supported.</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="reset"</td>
+                <td class="lorem2"><input type="reset"></td>
+                <td class="lorem2">if you change input value and then click reset button, the form data will be reset to default values.</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="search"</td>
+                <td class="lorem"><input type="search"></td>
+                <td class="lorem"></td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="submit"</td>
+                <td class="lorem2"><input type="submit"></td>
+                <td class="lorem2">needs e.g. PHP for sending data</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="tel"</td>
+                <td class="lorem"><input type="tel"></td>
+                <td class="lorem"></td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="text"</td>
+                <td class="lorem2"><input type="text"></td>
+                <td class="lorem2">most common input used</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="time"</td>
+                <td class="lorem"><input type="time"></td>
+                <td class="lorem">safari and IE12 or earlier not supported</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="url"</td>
+                <td class="lorem2"><input type="url"></td>
+                <td class="lorem2">IE9 and earlier not supported</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="week"</td>
+                <td class="lorem"><input type="week"></td>
+                <td class="lorem">firefox, safari or IE11 not supported</td>
+            </tr>
+
+            <tr>
+                <td class="headline-full">Select and text area</td>
+            </tr>
+            <tr>
+                <td class="lorem2">type="select"</td>
+                <td class="lorem2">
+                    <label for="cars">Choose a car:</label>
+                        <select name="cars" id="cars" form="carform">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                        </select>
+                </td>
+                <td class="lorem2">select is wrapping options</td>
+            </tr>
+            <tr>
+                <td class="lorem">type="textarea"</td>
+                <td class="lorem"><input type="textarea"></td>
+                <td class="lorem">size of text area can be specified by the cols and rows attributes. or even better, through css height and width</td>
+            </tr>
+        </table>
+    </main>  
+</body>
+</html>

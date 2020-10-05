@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(229, 248, 250);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(141, 171, 175);
+    height: 50px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+/*
+a:link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: orange;
+    text-decoration: underline;
+}
+*/
+/* hero */
+
+section {
+    position: relative;
+    height: 100vh;
+    margin-top: 50px;
+    position: relative;
+    background: url('https://source.unsplash.com/1600x900/?winter,mountain') no-repeat fixed center center/cover;
+}
+
+/*'''''''''''''''''''' set overlay color on hero banner''''''''''''''''''''''''''''''''''''''''''''' */
+section::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 102, 255, 0.253), rgba(0, 255, 179, 0.342));
+    top: 0;
+    left: 0;
+}
+
+/*'''''''''''''''''''' set color box for hero text ''''''''''''''''''''''''''''''''''''''''''''' */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 200px;
+    position: relative;
+    padding: 100px;
+    color: white;
+    z-index: 100;
+}
+
+.container::after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(rgb(112, 112, 112), rgba(255, 255, 255, 0.342));
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+main p {
+    color: white;
+    padding: 1rem;
+    background-color: cornflowerblue;
+    margin: 1rem;
+}
+
+p:first-child {
+    color: black;
+    background-color: blue;
+    padding: 1rem;
+    margin-left: 50px;
+}
+
+p:last-child {
+    color: black;
+    padding: 1rem;
+}
+
+main p:nth-child(even) {
+    color: black;
+    padding: 1rem;
+    background-color: cadetblue;
+}
+
+main p:nth-child(3n) {
+    font-size: 10px;
+}
+
+main p:nth-child(3n + 2) {
+    color: rgb(0, 26, 255);
+}
+
+/* to make section stick on the screen when reaching certain scroll position */
+p:nth-child(6) {
+    position: sticky;
+    top: 800px;
+    margin-left: 50px;
+    background-color: rgb(252, 252, 140);
+    color: black;
+}

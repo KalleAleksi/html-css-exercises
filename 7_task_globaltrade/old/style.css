@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 0px;
+}
+
+h3 {
+    border-top: 1px solid coral;
+    padding: 10px 0;
+}
+
+/* header */
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+header img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    list-style-type: uppercase;
+    color: #333333;
+    padding: 0 50px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* main */
+/* main - hero */
+
+main #hero-banner {
+    background: url('https://source.unsplash.com/1600x900/?aviation') no-repeat fixed center center/cover;
+    height: 70vh;
+}
+
+main #hero-banner .container .box {
+    position: absolute;
+    background-color: rgba(255,127,80,.8);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    height: 250px;
+    margin-top: 30vh;
+    margin-left: 200px;
+}
+
+/* main - about us */
+
+main #about .float-container {
+    margin: 50px 200px;
+}
+
+main #about .float-container h2,
+main #about .float-container p {
+    width: 400px;
+    float: left;
+}
+
+main #about .float-container img {
+    width: 400px;
+    float: right;
+}
+
+/* footer */
+
+footer {
+    clear: both;
+    background-color: #333333;
+    height: 70vh;
+    color: #ffffff;
+}
+
+footer form label {
+    padding: 20px;
+}
+
+footer form .container {
+    margin: 0 200px;
+    padding-top: 20px;
+}
+
+footer form .container .details {
+    margin: 20px 0;
+}
+
+footer form .container .details input {
+    margin: 0 0 20px 20px;
+}
