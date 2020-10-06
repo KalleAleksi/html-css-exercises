@@ -29,10 +29,6 @@
 }
 
 body {
-    /* font-family: var(--font-regular);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--background-color); */
     font-family: 'Finlandica', Fallback, sans-serif;
     background-color: var(--main-website-bg);
 }
@@ -62,7 +58,7 @@ main .container {
 }
 
 #logo-row a.en-link {
-    color: var(--light-blue);
+    color: var(--secondary-blue);
     padding: 1.5rem 2.5rem 0 0;
     font-size: 0.8rem;
 }
@@ -203,15 +199,6 @@ main .container {
     cursor: pointer;
 }
 
-/* .btn {
-    display: inline-block;
-    border-radius: 3px;
-    text-decoration: none;
-    padding: 0.8rem 1rem;
-    margin-bottom: 2rem;
-    cursor: pointer;
-} */
-
 .search .btn-primary {
     background: var(--primary-blue);
     color: white;
@@ -231,56 +218,6 @@ main .container {
 .hide {
     display: none !important;
 }
-
-/* #navbar .search {
-    padding: 1rem 2.5rem 0 0;
-}
-
-#navbar .search .search-icon {
-    color: var(--main-white);
-}
-
-#navbar .search .search-box {
-    display: none;
-    position: absolute;
-    background-color: var(--main-white);
-    width: 15rem;
-    height: 5rem;
-    top: 3rem;
-    right: 2.5rem;
-    padding: 1rem;
-}
-
-#navbar .search .search-box .blue-box {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 5px;
-    margin-top: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-blue);
-    float: right;
-}
-
-#navbar .search .search-box input {
-    margin: .5rem 0 .5rem .5rem;
-    padding: .5rem;
-    width: 10rem;
-    float: left;
-}
-
-#navbar .search:hover a {
-    cursor: pointer;
-}
-
-#navbar .search {
-    position: relative;
-}
-
-#navbar .search:hover .search-box {
-    display: block;
-} */
 
 /* hero banner *************************************************************/
 
@@ -315,7 +252,7 @@ main .container {
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
-    top: 15vh;
+    top: 25vh;
 }
 
 #hero-banner h1 {
@@ -528,11 +465,11 @@ footer .footer-grid .contact-and-terms {
         display: none;
     }
     #hero-banner h1 {
-        top: 10vh;
+        top: 20vh;
         width: 90%;
     }
     #hero-banner h2 {
-        top: 10vh;
+        top: 20vh;
         width: 90%;
     }
     #category .grid-group,
@@ -548,7 +485,7 @@ footer .footer-grid .contact-and-terms {
 
 @media (max-width: 568px) {
     footer {
-        height: 100vh;
+        min-height: 100vh;
     }
     footer .footer-grid {
         grid-template-columns: repeat(1, 1fr);
