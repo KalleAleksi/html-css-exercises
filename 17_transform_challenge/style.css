@@ -97,38 +97,20 @@
 /* seventh task -- alive background */
 
 body {
-    background: background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(109, 0, 255)) !important;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #1F2123, #6BD0FF, #1A74E2, #1F2123);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
   }
-  
-  /* css animation not smooth */
-  body {
-    min-height: 100vh;
-    opacity: .5;
-    animation: myfirst 5s;
-    -moz-animation: myfirst 5s infinite; /* Firefox */
-    -webkit-animation: myfirst 5s infinite; /* Safari and Chrome */
+  50% {
+      background-position: 100% 50%;
   }
-  
-  @-moz-keyframes myfirst { /* Firefox */ 
-    0% {
-      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(0, 174, 255))
-    }
-    50% {
-      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(135, 255, 0))
-    }
-    100% {
-      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(109, 0, 255))
-    }
+  100% {
+      background-position: 0% 50%;
   }
-  
-  @-webkit-keyframes myfirst { /* Safari and Chrome */
-    0% {
-      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(0, 174, 255))
-    }
-    50% {
-      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(135, 255, 0))
-    }
-    100% {
-      background: linear-gradient(rgba(173, 136, 255, 0.44), rgb(109, 0, 255))
-    }
-  }
+}

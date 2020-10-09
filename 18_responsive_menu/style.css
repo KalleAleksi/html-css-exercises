@@ -33,7 +33,6 @@ header nav .icon {
 }
 
 header nav ul {
-    display: none;
     padding: 1rem;
     list-style-type: none;
     color: #ffffff;
@@ -98,6 +97,9 @@ main section {
 /* media queries */
 
 @media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
     header nav .icon {
         display: block;
         padding-right: 1rem;
