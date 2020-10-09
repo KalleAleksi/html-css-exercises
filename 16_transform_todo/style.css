@@ -1,9 +1,10 @@
 :root {
-    --background-color: cornsilk;
-    --light-color: skyblue;
-    --highlight-color: salmon;
-    --dark-color: #333;
-    --font: "Quicksand", sans-serif;
+    --background: #5ec0ca;
+    --primary-color: #ce8f5a;
+    --secondary-color: #efd199;
+    --light-color: #80c8bc;
+    --dark-color: #333333;
+    --font-family: 'Aladin', cursive;
     --gradient: linear-gradient(
       to right top,
       #051937,
@@ -15,8 +16,9 @@
   }
   
   body {
-    background: var(--gradient);
-    font-family: var(--font);
+    background-color: var(--background);
+    font-family: var(--font-family);
+    color: var(--dark-color);
     height: 100vh;
   }
   
@@ -73,7 +75,7 @@
       background: var(--light-color);
     }
     to {
-      background: var(--highlight-color);
+      background: var(--secondary-color);
       height: 200px;
       width: 200px;
       box-shadow: 10px 10px 20px black;
@@ -127,7 +129,7 @@
     height: 4px;
     width: 0;
     display: block;
-    background: var(--highlight-color);
+    background: var(--secondary-color);
     transition: 1s ease-in all;
   }
   
@@ -137,32 +139,32 @@
   
   /********* LEFT SIDE - bottom to top *********/
   
-  .advanced h1::before {
+  /* .advanced h1::before {
     content: "";
     display: block;
     position: absolute;
     top: 200px;
     left: 0;
     bottom: 0;
-    border-left: 3px solid var(--highlight-color);
+    border-left: 3px solid var(--secondary-color);
     transition: all 1s;
   }
   .advanced:hover h1::before {
     top: 0;
-  }
+  } */
   
   /********* LEFT SIDE - top to bottom *********/
   
-  /* .advanced h1::before {
+  .advanced h1::before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 200px;
-    border-left: 3px solid var(--highlight-color);
+    border-left: 3px solid var(--secondary-color);
     transition: all 1s;
   }
   .advanced:hover h1::before {
     bottom: 0;
-  } */
+  }
